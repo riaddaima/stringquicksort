@@ -16,9 +16,7 @@ void stringqsort(char arr[][CHARACTERS_LIMIT], int low, int high) {
             while (i <= j) {
                 if (strcmp(arr[i], arr[high]) > 0) {
                     if (strcmp(arr[j], arr[high]) < 0) {
-                        swap(arr[i], arr[j]);
-                        i++;
-                        j--;
+                        swap(arr[i++], arr[j--]);
                     } else {
                         j--;
                     }

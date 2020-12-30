@@ -26,6 +26,6 @@ void stringqsort(char arr[][CHARACTERS_LIMIT], int low, int high) {
             }
             swap(arr[i], arr[high]);
             stringqsort(arr, low, j);
-            stringqsort(arr, i+1, high);
+            stringqsort(arr, ++i, high);
     }
 }
